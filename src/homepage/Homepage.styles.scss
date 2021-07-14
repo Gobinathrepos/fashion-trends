@@ -1,0 +1,159 @@
+.homepage {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px 80px;
+	border: 1px dashed #4a4a4a;
+}
+
+.banner {
+	height: 25rem;
+	margin-top: 2rem;
+	background: #f3f3f3;
+	display: flex;
+}
+
+.banner-desc {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	padding: 5rem;
+	flex-basis: 50%;
+}
+
+.banner-img {
+	width: 100%;
+	height: 100%;
+	flex-basis: 50%;
+	overflow: hidden;
+
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		transform: translateX(5rem);
+	}
+}
+
+.directory-menu {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.menu-item {
+	min-width: 30%;
+	height: 240px;
+	flex: 1 1 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #4a4a4a;
+	margin: 0 7.5px 15px;
+
+	&:first-child {
+		margin-right: 7.5px;
+	}
+
+	&:last-child {
+		margin-left: 7.5px;
+	}
+
+	.content {
+		height: 90px;
+		padding: 0 25px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		border: 1px solid #4a4a4a;
+
+		.title {
+			font-weight: bold;
+			margin-bottom: 6px;
+			font-size: 22px;
+			color: #4a4a4a;
+		}
+
+		.subtitle {
+			font-weight: lighter;
+			font-size: 16px;
+		}
+	}
+}
+
+.display {
+	margin: 10rem 5rem 5rem;
+}
+
+.display-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@media (max-width: 30rem) {
+	.banner {
+		height: auto;
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 30rem) {
+	.banner-desc {
+		padding: 1rem 0;
+
+		h1 {
+			width: 100%;
+		}
+	}
+}
+
+h1 {
+	font-size: 2em;
+	margin: 0.67em 0;
+}
+
+h1.text-thin {
+	font-size: 48px;
+	margin: 0.67em 0px;
+	box-sizing: border-box;
+	font-family: Tajawal, Helvetica, Arial, sans-serif;
+	color: rgb(26, 26, 26);
+	margin-bottom: 1rem;
+	width: 80%;
+	font-weight: 400;
+}
+
+strong {
+	font-weight: 700;
+	box-sizing: border-box;
+}
+
+p {
+	color: rgb(74, 74, 74);
+	line-height: 2rem;
+}
+
+.button {
+	background-color: transparent;
+	box-sizing: border-box;
+	background: rgb(16, 16, 16);
+	padding: 1.6rem;
+	border: 1px solid rgb(16, 16, 16);
+	color: rgb(255, 255, 255);
+	font-weight: 700;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.3s ease 0s;
+	text-decoration: none;
+}
+
+svg {
+	line-height: 1;
+	display: inline-block;
+	box-sizing: border-box;
+}
